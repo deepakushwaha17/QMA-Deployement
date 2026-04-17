@@ -13,10 +13,7 @@ import com.app.quantitymeasurement.model.AppUser;
 import com.app.quantitymeasurement.repository.UserRepository;
 import com.app.quantitymeasurement.security.JwtService;
 
-import lombok.RequiredArgsConstructor;
-
 @Service
-@RequiredArgsConstructor
 public class AuthService {
 
 	private final AuthenticationManager authManager;

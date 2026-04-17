@@ -8,10 +8,7 @@ import org.springframework.stereotype.Service;
 import com.app.quantitymeasurement.model.AppUser;
 import com.app.quantitymeasurement.repository.UserRepository;
 
-import lombok.RequiredArgsConstructor;
-
 @Service
-@RequiredArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService {
 
 	private final UserRepository userRepo;

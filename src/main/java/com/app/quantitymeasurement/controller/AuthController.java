@@ -10,17 +10,13 @@ import com.app.quantitymeasurement.request.SignupRequest;
 import com.app.quantitymeasurement.response.AuthResponse;
 import com.app.quantitymeasurement.service.AuthService;
 
-import lombok.RequiredArgsConstructor;
-
 @RestController
 @RequestMapping("/auth")
-@RequiredArgsConstructor
 public class AuthController {
 
 	private final AuthService authService;
 
 	public AuthController(AuthService authService) {
-		super();
 		this.authService = authService;
 	}
 

@@ -1,20 +1,12 @@
 package com.app.quantitymeasurement.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "quantity_measurement_entity", indexes = { @Index(name = "idx_operation", columnList = "operation"),
 		@Index(name = "idx_measurement_type", columnList = "this_measurement_type"),
 		@Index(name = "idx_created_at", columnList = "created_at") })
-
-@Data // Lombok annotation to generate getters, setters, toString, equals, hashCode
-		// methods
-@AllArgsConstructor // Lombok annotation to generate an all-arguments constructor
-@NoArgsConstructor // Lombok annotation to generate a no-arguments constructor
 public class QuantityMeasurementEntity {
 
 	@Id
